@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acharya Shiv Tiwari - Vedic Astrologer</title>
+    <meta name="description" content="Navigate Your Destiny with the Timeless Wisdom of Vedic Astrology. Find clarity, purpose, and profound solutions to life's challenges.">
+    <meta name="keywords" content="Vedic Astrology, Jyotish, Acharya Shiv Tiwari, Horoscope, Birth Chart, Relationship Compatibility">
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  Hello world
-  <script src="script.js"></script>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>Acharya Shiv Tiwari</h2>
+                <h2>🕉️ Acharya Shiv Tiwari</h2>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#booking">Booking</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
     <!-- Home Section -->
@@ -34,7 +36,7 @@
             <div class="hero-content">
                 <h1 class="hero-title">Navigate Your Destiny with the Timeless Wisdom of Vedic Astrology</h1>
                 <p class="hero-subtitle">Find clarity, purpose, and profound solutions to life's challenges. Authentic guidance from a traditional lineage you can trust.</p>
-                <a href="#contact" class="cta-button">Book Your Consultation</a>
+                <a href="#booking" class="cta-button">Book Your Consultation</a>
             </div>
         </div>
     </section>
@@ -43,11 +45,10 @@
         <div class="container">
             <h2 class="section-title">Our Tradition, Your Guide: About Acharya Shiv Tiwari</h2>
             <div class="about-content">
-                <p class="about-text">Acharya Shiv Tiwari's journey into Vedic astrology was a calling. Born into a devout Pandit family, he witnessed many people being misled and felt a strong pull to offer genuine, scripture-based guidance. Under the tutelage of his revered Guru, he earned the titles of Acharya and Shastri. His approach is not just about prediction; it's about understanding and healing.</p>
-                <div class="testimonial">
-                    <p class="testimonial-text">"I was struggling with my career path... His guidance was invaluable."</p>
-                    <p class="testimonial-author">— Anand Shukla, Gonda</p>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/250" alt="Acharya Shiv Tiwari">
                 </div>
+                <p class="about-text">Acharya Shiv Tiwari's journey into Vedic astrology was a calling. Born into a devout Pandit family, he witnessed many people being misled and felt a strong pull to offer genuine, scripture-based guidance. Under the tutelage of his revered Guru, he earned the titles of Acharya and Shastri. His approach is not just about prediction; it's about understanding and healing.</p>
             </div>
         </div>
     </section>
@@ -79,12 +80,48 @@
             </div>
         </div>
     </section>
+    <!-- Blog Section -->
+    <section id='blog'>
+        <div class="container">
+            <h2>📝 Blog & Articles</h2>
+            <article>
+                <h3>What is a Birth Chart?</h3>
+                <p>Basics of a birth chart and how it influences your journey.</p>
+            </article>
+            <article>
+                <h3>Marriage Compatibility in Vedic Astrology</h3>
+                <p>How kundli matching works and why it matters.</p>
+            </article>
+        </div>
+    </section>
+    <!-- Booking Form -->
+    <section id='booking'>
+        <div class="container">
+            <h2>📅 Book a Consultation</h2>
+            <form>
+                <label>Name</label>
+                <input type='text' required>
+                <label>Email</label>
+                <input type='email' required>
+                <label>Preferred Date</label>
+                <input type='date' required>
+                <label>Service</label>
+                <select required>
+                  <option value='consultation'>First-Time Consultation (₹199)</option>
+                  <option value='birthchart'>Full Birth Chart Reading (₹299)</option>
+                  <option value='compatibility'>Marriage Compatibility (₹299)</option>
+                  <option value='life'>Complete Life Consultation (₹499)</option>
+                </select>
+                <button type='submit'>Submit</button>
+            </form>
+        </div>
+    </section>
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container">
-            <h2 class="section-title">Book Your Consultation</h2>
+            <h2 class="section-title">Contact Us</h2>
             <div class="contact-content">
-                <p class="contact-text">To book your session, contact us via WhatsApp or Email. Complete the payment via UPI and send the screenshot to our WhatsApp.</p>
+                <p class="contact-text">For any inquiries, you can reach us via WhatsApp or Email.</p>
                 <div class="contact-details">
                     <div class="contact-item">
                         <h4>WhatsApp</h4>
@@ -94,17 +131,23 @@
                         <h4>Email</h4>
                         <p>cvamtiwari73@gmail.com</p>
                     </div>
-                    <div class="contact-item">
-                        <h4>UPI</h4>
-                        <p>7355556366@ybl</p>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Acharya Shiv Tiwari. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+                <p>🕉 Om Shanti | &copy; 2025 JyotishPortal. All rights reserved.</p>
+                <div class="footer-disclaimer">
+                    <p>Disclaimer: Astrology is a spiritual guidance tool. It does not substitute for professional legal, medical, or financial advice. All consultations are confidential.</p>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>
