@@ -97,23 +97,49 @@
     <!-- Booking Form -->
     <section id='booking'>
         <div class="container">
-            <h2>📅 Book a Consultation</h2>
-            <form>
-                <label>Name</label>
-                <input type='text' required>
-                <label>Email</label>
-                <input type='email' required>
-                <label>Preferred Date</label>
-                <input type='date' required>
-                <label>Service</label>
-                <select required>
-                  <option value='consultation'>First-Time Consultation (₹199)</option>
-                  <option value='birthchart'>Full Birth Chart Reading (₹299)</option>
-                  <option value='compatibility'>Marriage Compatibility (₹299)</option>
-                  <option value='life'>Complete Life Consultation (₹499)</option>
-                </select>
-                <button type='submit'>Submit</button>
-            </form>
+            <h2 class="section-title">📅 Book a Consultation</h2>
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h3>Begin Your Journey</h3>
+                    <p>Take the first step towards clarity and enlightenment. Fill out the form, and we will contact you within 24 hours to schedule your consultation and provide payment details.</p>
+                    <p>Our sessions are conducted with the utmost confidentiality and personalized care.</p>
+                </div>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name" required>
+                            <span class="input-icon">👤</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" required>
+                            <span class="input-icon">✉️</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Choose Service</label>
+                        <div class="input-wrapper">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value='consultation'>First-Time Consultation (₹199)</option>
+                                <option value='birthchart'>Full Birth Chart Reading (₹299)</option>
+                                <option value='compatibility'>Marriage Compatibility (₹299)</option>
+                                <option value='life'>Complete Life Consultation (₹499)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <div class="input-wrapper">
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="cta-button">Request Booking</button>
+                </form>
+            </div>
         </div>
     </section>
     <!-- Contact Section -->
