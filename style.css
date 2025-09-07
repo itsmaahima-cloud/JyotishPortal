@@ -275,10 +275,120 @@ body {
 .footer p {
     color: #7a8ba8;
 }
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.about-image {
+    flex-shrink: 0;
+}
+.about-image img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #d4af37;
+}
+
+/* Footer */
+.footer-content {
+    text-align: center;
+}
+.footer-social {
+    margin-bottom: 1.5rem;
+}
+.social-link {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+.social-link:hover {
+    color: #d4af37;
+}
+.footer-disclaimer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #7a8ba8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Blog Section */
+#blog { padding:40px; background:#fafafa; color: #333; }
+#blog h2 { text-align:center; margin-bottom:20px; }
+#blog article { background:#fff; padding:15px; margin:10px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+#blog article h3 { color: #3b2a7a; }
+
+/* Booking Form */
+#booking { padding:40px; background:#f4f2ff; text-align:center; color: #333; }
+#booking form { max-width:500px; margin:auto; display:flex; flex-direction:column; gap:12px; text-align: left; }
+#booking input, #booking select { padding:10px; border:1px solid #ccc; border-radius:6px; }
+#booking button { padding:12px; background:#3b2a7a; color:#fff; border:none; border-radius:6px; cursor:pointer; }
+#booking button:hover { background:#2d1f5a; }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f5f5f5;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
-        display: none;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #0a0f1c;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        gap: 0;
+        z-index: 999;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-menu li {
+        padding: 1rem 0;
+        border-bottom: 1px solid #1a2332;
+    }
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image {
+        margin-right: 0;
+        margin-bottom: 2rem;
     }
     
     .hero-title {
